@@ -15,9 +15,11 @@
     <div id="webcam-container"></div>
     <div id="label-container"></div>
     <div style="background-color: black; color: white; text-align:center"><h1>PONTUAÇÃO TOTAL</h1></div>
-    <div style="background-color: yellow; display: flex;"><h1>Lucas: </h1><h1 id="pont-lucas" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
+    <div style="background-color: yellow; display: flex;"><h1>Tulio: </h1><h1 id="pont-tulio" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
     <div style="background-color: green; display: flex;"><h1>Garrafa: </h1><h1 id="pont-garrafa" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
-    <div style="background-color: blue; display: flex;"><h1>Celular: </h1><h1 id="pont-celular" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
+    <div style="background-color: pink; display: flex;"><h1>Celular: </h1><h1 id="pont-celular" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
+    <div style="background-color: red; display: flex;"><h1>Caneca: </h1><h1 id="pont-caneca" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
+    <div style="background-color: orange; display: flex;"><h1>Controle: </h1><h1 id="pont-controle" style="margin-left:50px; background-color:white; width:150px; text-align: center;">0</h1></div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script type="text/javascript">
@@ -95,7 +97,7 @@
                     switch (indice_maior) {
                         case 0:
                             pontuacao_tulio++
-                            document.getElementById("pont-lucas").innerHTML = pontuacao_tulio
+                            document.getElementById("pont-tulio").innerHTML = pontuacao_tulio
                             break
                         case 1:
                             pontuacao_garrafa++
@@ -107,11 +109,11 @@
                             break
                         case 3:
                             pontuacao_caneca++
-                            document.getElementById("pont-celular").innerHTML = pontuacao_caneca
+                            document.getElementById("pont-caneca").innerHTML = pontuacao_caneca
                             break
                         case 4:
                             pontuacao_controle++
-                            document.getElementById("pont-celular").innerHTML = pontuacao_controle
+                            document.getElementById("pont-controle").innerHTML = pontuacao_controle
                             break
                     }
                 }
